@@ -31,9 +31,8 @@ gulp.task('minify-css', function () {
 });
 
 gulp.task('minify-js', function () {
-    gulp.src('js/*.js')
+    gulp.src(['js/vendor/jquery-3.2.1.min.js','node_modules/bootstrap/dist/js/bootstrap.min.js', 'js/*.js'])
         .pipe(concat('app.js'))
         .pipe(uglify())
         .pipe(gulp.dest('build/'))
 });
-

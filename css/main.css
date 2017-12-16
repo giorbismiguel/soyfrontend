@@ -79,6 +79,128 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header {
+  background-color: #000000;
+  color: #ffffff; }
+  header li {
+    list-style: none;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 4px 5px;
+    color: #000000;
+    border-radius: 8px;
+    margin: 1.4em 3px 0; }
+  header li.active {
+    background-color: #666666;
+    color: #ffffff; }
+
+#wrapper_content {
+  background-color: #ffffff; }
+  #wrapper_content div.block-green {
+    background-color: #cdcdce;
+    margin-top: 1vh;
+    border-radius: 8px;
+    padding: 3em 3em 5em 3em; }
+  #wrapper_content hr {
+    border: 1px solid #666666; }
+  #wrapper_content div.absolute-block {
+    position: absolute;
+    height: 50vh;
+    background-color: #666666;
+    border-radius: 8px;
+    left: 57vw; }
+  #wrapper_content button {
+    position: absolute;
+    bottom: -93px;
+    left: 100px;
+    background-color: #666666;
+    color: #ffffff; }
+  #wrapper_content ul {
+    padding-left: 15px; }
+
+footer {
+  height: 90px;
+  background-color: #666666;
+  width: 100%;
+  margin-top: 10px; }
+  footer span:first-child {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-top: 4vh;
+    display: inline-block; }
+
+.carousel-showmanymoveone .carousel-control {
+  width: 4%;
+  background-image: none; }
+  .carousel-showmanymoveone .carousel-control.left {
+    margin-left: -45px; }
+  .carousel-showmanymoveone .carousel-control.right {
+    margin-right: -45px; }
+
+.carousel-showmanymoveone .cloneditem-1,
+.carousel-showmanymoveone .cloneditem-2,
+.carousel-showmanymoveone .cloneditem-3 {
+  display: none; }
+
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  .carousel-showmanymoveone .carousel-inner > .item.next {
+    transform: translate3d(50%, 0, 0);
+    left: 0; }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    transform: translate3d(-50%, 0, 0);
+    left: 0; }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  .carousel-showmanymoveone .carousel-inner > .item.active {
+    transform: translate3d(0, 0, 0);
+    left: 0; } }
+
+@media all and (min-width: 768px) {
+  .carousel-showmanymoveone .carousel-inner > .active.left,
+  .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -50%; }
+  .carousel-showmanymoveone .carousel-inner > .active.right,
+  .carousel-showmanymoveone .carousel-inner > .next {
+    left: 50%; }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0; }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+    display: block; } }
+
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  .carousel-showmanymoveone .carousel-inner > .item.next {
+    transform: translate3d(16.666%, 0, 0);
+    left: 0; }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    transform: translate3d(-16.666%, 0, 0);
+    left: 0; }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  .carousel-showmanymoveone .carousel-inner > .item.active {
+    transform: translate3d(0, 0, 0);
+    left: 0; } }
+
+@media all and (min-width: 992px) {
+  .carousel-showmanymoveone .carousel-inner > .active.left,
+  .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -25%; }
+  .carousel-showmanymoveone .carousel-inner > .active.right,
+  .carousel-showmanymoveone .carousel-inner > .next {
+    left: 25%; }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0; }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-2,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-3 {
+    display: block; } }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -159,6 +281,28 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media (max-width: 768px) {
+  header li {
+    background-color: #666666;
+    color: #ffffff;
+    margin: 1em 3px 0; }
+  header .wrapper-nav {
+    background-color: #ffffff;
+    text-align: left; }
+    header .wrapper-nav ul {
+      padding-left: 0; }
+  #wrapper_content {
+    background-color: #ffffff; }
+    #wrapper_content div.first-block {
+      margin-top: 0vh;
+      border-radius: 0px; }
+  .carousel-showmanymoveone .carousel-control.left {
+    margin-left: -7px; }
+  .carousel-showmanymoveone .carousel-control.right {
+    margin-right: -7px; }
+  #wrapper_content button {
+    left: 85px; } }
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */ }
 
@@ -177,7 +321,7 @@ textarea {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+                                      http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
     text-shadow: none !important; }
   a,
